@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.sangdaero.walab.WalabApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.259 s - in com.sangdaero.walab.WalabApplicationTests
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.106 s <<< FAILURE! - in com.sangdaero.walab.WalabApplicationTests
+contextLoads  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.sangdaero.walab.community.controller.CommunityController] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@15db9742]
+Caused by: java.lang.NoClassDefFoundError: LCommunityService;
+Caused by: java.lang.ClassNotFoundException: CommunityService
+
