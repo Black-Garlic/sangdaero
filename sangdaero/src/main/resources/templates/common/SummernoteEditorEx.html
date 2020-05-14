@@ -1,8 +1,10 @@
+	<!-- Use at <head> tag -->
 	<script th:src="@{/summernote/summernote-lite.js}"></script>
 	<script th:src="@{/summernote/lang/summernote-ko-KR.js}"></script>
 	
 	<link rel="stylesheet" th:href="@{/summernote/summernote-lite.css}">
 	
+	<!-- Use at <body> tag -->
 	<!-- Summernote Editor -->
 	<script >
 		$(document).ready(function() {
@@ -40,7 +42,9 @@
 			}
 		});
 	</script>
-	
-<div class="editor_wrap">
-	<textarea name="content" id="summernote"></textarea>
-</div><br>
+
+
+	<!-- Text Area Example -->
+	<div class="editor_wrap">
+		<textarea name="content" id="summernote"></textarea>
+	</div><br>

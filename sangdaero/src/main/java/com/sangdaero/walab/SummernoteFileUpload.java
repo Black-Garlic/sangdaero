@@ -58,11 +58,7 @@ public class SummernoteFileUpload {
 		
 		File targetFile = new File(fileRoot + monthDirectory + "\\" + savedFileName);	
 		
-		System.out.println(fileRoot);
-		System.out.println(originalFileName);
-		System.out.println(extension);
-		System.out.println(savedFileName);
-		System.out.println(targetFile);
+
 		
 		try {
 			InputStream fileStream = multipartFile.getInputStream();
